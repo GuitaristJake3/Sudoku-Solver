@@ -114,6 +114,8 @@ namespace Sudoku_Solver
             this.numericUpDown34 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown35 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown36 = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.r1c1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.r3c1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.r2c3)).BeginInit();
@@ -209,7 +211,7 @@ namespace Sudoku_Solver
             0});
             this.r1c1.Name = "r1c1";
             this.r1c1.Size = new System.Drawing.Size(35, 38);
-            this.r1c1.TabIndex = 0;
+            this.r1c1.TabIndex = 1;
             this.r1c1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r3c1
@@ -224,7 +226,7 @@ namespace Sudoku_Solver
             0});
             this.r3c1.Name = "r3c1";
             this.r3c1.Size = new System.Drawing.Size(35, 38);
-            this.r3c1.TabIndex = 1;
+            this.r3c1.TabIndex = 19;
             this.r3c1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r2c3
@@ -239,7 +241,7 @@ namespace Sudoku_Solver
             0});
             this.r2c3.Name = "r2c3";
             this.r2c3.Size = new System.Drawing.Size(35, 38);
-            this.r2c3.TabIndex = 2;
+            this.r2c3.TabIndex = 12;
             this.r2c3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r2c2
@@ -254,7 +256,7 @@ namespace Sudoku_Solver
             0});
             this.r2c2.Name = "r2c2";
             this.r2c2.Size = new System.Drawing.Size(35, 38);
-            this.r2c2.TabIndex = 3;
+            this.r2c2.TabIndex = 11;
             this.r2c2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r2c1
@@ -269,7 +271,7 @@ namespace Sudoku_Solver
             0});
             this.r2c1.Name = "r2c1";
             this.r2c1.Size = new System.Drawing.Size(35, 38);
-            this.r2c1.TabIndex = 4;
+            this.r2c1.TabIndex = 10;
             this.r2c1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r1c3
@@ -284,7 +286,7 @@ namespace Sudoku_Solver
             0});
             this.r1c3.Name = "r1c3";
             this.r1c3.Size = new System.Drawing.Size(35, 38);
-            this.r1c3.TabIndex = 5;
+            this.r1c3.TabIndex = 3;
             this.r1c3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r1c2
@@ -299,7 +301,7 @@ namespace Sudoku_Solver
             0});
             this.r1c2.Name = "r1c2";
             this.r1c2.Size = new System.Drawing.Size(35, 38);
-            this.r1c2.TabIndex = 6;
+            this.r1c2.TabIndex = 2;
             this.r1c2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r3c3
@@ -314,7 +316,7 @@ namespace Sudoku_Solver
             0});
             this.r3c3.Name = "r3c3";
             this.r3c3.Size = new System.Drawing.Size(35, 38);
-            this.r3c3.TabIndex = 7;
+            this.r3c3.TabIndex = 21;
             this.r3c3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r3c2
@@ -329,7 +331,7 @@ namespace Sudoku_Solver
             0});
             this.r3c2.Name = "r3c2";
             this.r3c2.Size = new System.Drawing.Size(35, 38);
-            this.r3c2.TabIndex = 8;
+            this.r3c2.TabIndex = 20;
             this.r3c2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r3c5
@@ -344,7 +346,7 @@ namespace Sudoku_Solver
             0});
             this.r3c5.Name = "r3c5";
             this.r3c5.Size = new System.Drawing.Size(35, 38);
-            this.r3c5.TabIndex = 17;
+            this.r3c5.TabIndex = 23;
             this.r3c5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r3c6
@@ -359,7 +361,7 @@ namespace Sudoku_Solver
             0});
             this.r3c6.Name = "r3c6";
             this.r3c6.Size = new System.Drawing.Size(35, 38);
-            this.r3c6.TabIndex = 16;
+            this.r3c6.TabIndex = 24;
             this.r3c6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r1c5
@@ -374,7 +376,7 @@ namespace Sudoku_Solver
             0});
             this.r1c5.Name = "r1c5";
             this.r1c5.Size = new System.Drawing.Size(35, 38);
-            this.r1c5.TabIndex = 15;
+            this.r1c5.TabIndex = 5;
             this.r1c5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r1c6
@@ -389,7 +391,7 @@ namespace Sudoku_Solver
             0});
             this.r1c6.Name = "r1c6";
             this.r1c6.Size = new System.Drawing.Size(35, 38);
-            this.r1c6.TabIndex = 14;
+            this.r1c6.TabIndex = 6;
             this.r1c6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r2c4
@@ -419,7 +421,7 @@ namespace Sudoku_Solver
             0});
             this.r2c5.Name = "r2c5";
             this.r2c5.Size = new System.Drawing.Size(35, 38);
-            this.r2c5.TabIndex = 12;
+            this.r2c5.TabIndex = 14;
             this.r2c5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r2c6
@@ -434,7 +436,7 @@ namespace Sudoku_Solver
             0});
             this.r2c6.Name = "r2c6";
             this.r2c6.Size = new System.Drawing.Size(35, 38);
-            this.r2c6.TabIndex = 11;
+            this.r2c6.TabIndex = 15;
             this.r2c6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r3c4
@@ -449,7 +451,7 @@ namespace Sudoku_Solver
             0});
             this.r3c4.Name = "r3c4";
             this.r3c4.Size = new System.Drawing.Size(35, 38);
-            this.r3c4.TabIndex = 10;
+            this.r3c4.TabIndex = 22;
             this.r3c4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r1c4
@@ -464,7 +466,7 @@ namespace Sudoku_Solver
             0});
             this.r1c4.Name = "r1c4";
             this.r1c4.Size = new System.Drawing.Size(35, 38);
-            this.r1c4.TabIndex = 9;
+            this.r1c4.TabIndex = 4;
             this.r1c4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
@@ -497,7 +499,7 @@ namespace Sudoku_Solver
             0});
             this.r6c2.Name = "r6c2";
             this.r6c2.Size = new System.Drawing.Size(35, 38);
-            this.r6c2.TabIndex = 28;
+            this.r6c2.TabIndex = 47;
             this.r6c2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r6c3
@@ -512,7 +514,7 @@ namespace Sudoku_Solver
             0});
             this.r6c3.Name = "r6c3";
             this.r6c3.Size = new System.Drawing.Size(35, 38);
-            this.r6c3.TabIndex = 27;
+            this.r6c3.TabIndex = 48;
             this.r6c3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r4c2
@@ -527,7 +529,7 @@ namespace Sudoku_Solver
             0});
             this.r4c2.Name = "r4c2";
             this.r4c2.Size = new System.Drawing.Size(35, 38);
-            this.r4c2.TabIndex = 26;
+            this.r4c2.TabIndex = 29;
             this.r4c2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r4c3
@@ -542,7 +544,7 @@ namespace Sudoku_Solver
             0});
             this.r4c3.Name = "r4c3";
             this.r4c3.Size = new System.Drawing.Size(35, 38);
-            this.r4c3.TabIndex = 25;
+            this.r4c3.TabIndex = 30;
             this.r4c3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r5c1
@@ -557,7 +559,7 @@ namespace Sudoku_Solver
             0});
             this.r5c1.Name = "r5c1";
             this.r5c1.Size = new System.Drawing.Size(35, 38);
-            this.r5c1.TabIndex = 24;
+            this.r5c1.TabIndex = 37;
             this.r5c1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r5c2
@@ -572,7 +574,7 @@ namespace Sudoku_Solver
             0});
             this.r5c2.Name = "r5c2";
             this.r5c2.Size = new System.Drawing.Size(35, 38);
-            this.r5c2.TabIndex = 23;
+            this.r5c2.TabIndex = 38;
             this.r5c2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r5c3
@@ -587,7 +589,7 @@ namespace Sudoku_Solver
             0});
             this.r5c3.Name = "r5c3";
             this.r5c3.Size = new System.Drawing.Size(35, 38);
-            this.r5c3.TabIndex = 22;
+            this.r5c3.TabIndex = 39;
             this.r5c3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r6c1
@@ -602,7 +604,7 @@ namespace Sudoku_Solver
             0});
             this.r6c1.Name = "r6c1";
             this.r6c1.Size = new System.Drawing.Size(35, 38);
-            this.r6c1.TabIndex = 21;
+            this.r6c1.TabIndex = 46;
             this.r6c1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r4c1
@@ -617,7 +619,7 @@ namespace Sudoku_Solver
             0});
             this.r4c1.Name = "r4c1";
             this.r4c1.Size = new System.Drawing.Size(35, 38);
-            this.r4c1.TabIndex = 20;
+            this.r4c1.TabIndex = 28;
             this.r4c1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r6c5
@@ -632,7 +634,7 @@ namespace Sudoku_Solver
             0});
             this.r6c5.Name = "r6c5";
             this.r6c5.Size = new System.Drawing.Size(35, 38);
-            this.r6c5.TabIndex = 37;
+            this.r6c5.TabIndex = 50;
             this.r6c5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r6c6
@@ -647,7 +649,7 @@ namespace Sudoku_Solver
             0});
             this.r6c6.Name = "r6c6";
             this.r6c6.Size = new System.Drawing.Size(35, 38);
-            this.r6c6.TabIndex = 36;
+            this.r6c6.TabIndex = 51;
             this.r6c6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r4c5
@@ -662,7 +664,7 @@ namespace Sudoku_Solver
             0});
             this.r4c5.Name = "r4c5";
             this.r4c5.Size = new System.Drawing.Size(35, 38);
-            this.r4c5.TabIndex = 35;
+            this.r4c5.TabIndex = 32;
             this.r4c5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r4c6
@@ -677,7 +679,7 @@ namespace Sudoku_Solver
             0});
             this.r4c6.Name = "r4c6";
             this.r4c6.Size = new System.Drawing.Size(35, 38);
-            this.r4c6.TabIndex = 34;
+            this.r4c6.TabIndex = 33;
             this.r4c6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r5c4
@@ -692,7 +694,7 @@ namespace Sudoku_Solver
             0});
             this.r5c4.Name = "r5c4";
             this.r5c4.Size = new System.Drawing.Size(35, 38);
-            this.r5c4.TabIndex = 33;
+            this.r5c4.TabIndex = 40;
             this.r5c4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r5c5
@@ -707,7 +709,7 @@ namespace Sudoku_Solver
             0});
             this.r5c5.Name = "r5c5";
             this.r5c5.Size = new System.Drawing.Size(35, 38);
-            this.r5c5.TabIndex = 32;
+            this.r5c5.TabIndex = 41;
             this.r5c5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r5c6
@@ -722,7 +724,7 @@ namespace Sudoku_Solver
             0});
             this.r5c6.Name = "r5c6";
             this.r5c6.Size = new System.Drawing.Size(35, 38);
-            this.r5c6.TabIndex = 31;
+            this.r5c6.TabIndex = 42;
             this.r5c6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r6c4
@@ -737,7 +739,7 @@ namespace Sudoku_Solver
             0});
             this.r6c4.Name = "r6c4";
             this.r6c4.Size = new System.Drawing.Size(35, 38);
-            this.r6c4.TabIndex = 30;
+            this.r6c4.TabIndex = 49;
             this.r6c4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r4c4
@@ -752,7 +754,7 @@ namespace Sudoku_Solver
             0});
             this.r4c4.Name = "r4c4";
             this.r4c4.Size = new System.Drawing.Size(35, 38);
-            this.r4c4.TabIndex = 29;
+            this.r4c4.TabIndex = 31;
             this.r4c4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r9c2
@@ -767,7 +769,7 @@ namespace Sudoku_Solver
             0});
             this.r9c2.Name = "r9c2";
             this.r9c2.Size = new System.Drawing.Size(35, 38);
-            this.r9c2.TabIndex = 46;
+            this.r9c2.TabIndex = 74;
             this.r9c2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r9c3
@@ -782,7 +784,7 @@ namespace Sudoku_Solver
             0});
             this.r9c3.Name = "r9c3";
             this.r9c3.Size = new System.Drawing.Size(35, 38);
-            this.r9c3.TabIndex = 45;
+            this.r9c3.TabIndex = 75;
             this.r9c3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r7c2
@@ -797,7 +799,7 @@ namespace Sudoku_Solver
             0});
             this.r7c2.Name = "r7c2";
             this.r7c2.Size = new System.Drawing.Size(35, 38);
-            this.r7c2.TabIndex = 44;
+            this.r7c2.TabIndex = 56;
             this.r7c2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r7c3
@@ -812,7 +814,7 @@ namespace Sudoku_Solver
             0});
             this.r7c3.Name = "r7c3";
             this.r7c3.Size = new System.Drawing.Size(35, 38);
-            this.r7c3.TabIndex = 43;
+            this.r7c3.TabIndex = 57;
             this.r7c3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r8c1
@@ -827,7 +829,7 @@ namespace Sudoku_Solver
             0});
             this.r8c1.Name = "r8c1";
             this.r8c1.Size = new System.Drawing.Size(35, 38);
-            this.r8c1.TabIndex = 42;
+            this.r8c1.TabIndex = 64;
             this.r8c1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r8c2
@@ -842,7 +844,7 @@ namespace Sudoku_Solver
             0});
             this.r8c2.Name = "r8c2";
             this.r8c2.Size = new System.Drawing.Size(35, 38);
-            this.r8c2.TabIndex = 41;
+            this.r8c2.TabIndex = 65;
             this.r8c2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r8c3
@@ -857,7 +859,7 @@ namespace Sudoku_Solver
             0});
             this.r8c3.Name = "r8c3";
             this.r8c3.Size = new System.Drawing.Size(35, 38);
-            this.r8c3.TabIndex = 40;
+            this.r8c3.TabIndex = 66;
             this.r8c3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r9c1
@@ -872,7 +874,7 @@ namespace Sudoku_Solver
             0});
             this.r9c1.Name = "r9c1";
             this.r9c1.Size = new System.Drawing.Size(35, 38);
-            this.r9c1.TabIndex = 39;
+            this.r9c1.TabIndex = 73;
             this.r9c1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // r7c1
@@ -887,7 +889,7 @@ namespace Sudoku_Solver
             0});
             this.r7c1.Name = "r7c1";
             this.r7c1.Size = new System.Drawing.Size(35, 38);
-            this.r7c1.TabIndex = 38;
+            this.r7c1.TabIndex = 55;
             this.r7c1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
@@ -911,7 +913,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown10.Name = "numericUpDown10";
             this.numericUpDown10.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown10.TabIndex = 56;
+            this.numericUpDown10.TabIndex = 77;
             this.numericUpDown10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown11
@@ -926,7 +928,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown11.Name = "numericUpDown11";
             this.numericUpDown11.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown11.TabIndex = 55;
+            this.numericUpDown11.TabIndex = 78;
             this.numericUpDown11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown12
@@ -941,7 +943,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown12.Name = "numericUpDown12";
             this.numericUpDown12.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown12.TabIndex = 54;
+            this.numericUpDown12.TabIndex = 59;
             this.numericUpDown12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown13
@@ -956,7 +958,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown13.Name = "numericUpDown13";
             this.numericUpDown13.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown13.TabIndex = 53;
+            this.numericUpDown13.TabIndex = 60;
             this.numericUpDown13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown14
@@ -971,7 +973,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown14.Name = "numericUpDown14";
             this.numericUpDown14.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown14.TabIndex = 52;
+            this.numericUpDown14.TabIndex = 67;
             this.numericUpDown14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown15
@@ -986,7 +988,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown15.Name = "numericUpDown15";
             this.numericUpDown15.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown15.TabIndex = 51;
+            this.numericUpDown15.TabIndex = 68;
             this.numericUpDown15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown16
@@ -1001,7 +1003,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown16.Name = "numericUpDown16";
             this.numericUpDown16.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown16.TabIndex = 50;
+            this.numericUpDown16.TabIndex = 69;
             this.numericUpDown16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown17
@@ -1016,7 +1018,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown17.Name = "numericUpDown17";
             this.numericUpDown17.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown17.TabIndex = 49;
+            this.numericUpDown17.TabIndex = 76;
             this.numericUpDown17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown18
@@ -1031,7 +1033,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown18.Name = "numericUpDown18";
             this.numericUpDown18.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown18.TabIndex = 48;
+            this.numericUpDown18.TabIndex = 58;
             this.numericUpDown18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
@@ -1055,7 +1057,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown1.TabIndex = 66;
+            this.numericUpDown1.TabIndex = 26;
             this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown2
@@ -1070,7 +1072,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown2.TabIndex = 65;
+            this.numericUpDown2.TabIndex = 27;
             this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown3
@@ -1085,7 +1087,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown3.TabIndex = 64;
+            this.numericUpDown3.TabIndex = 8;
             this.numericUpDown3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown4
@@ -1100,7 +1102,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown4.Name = "numericUpDown4";
             this.numericUpDown4.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown4.TabIndex = 63;
+            this.numericUpDown4.TabIndex = 9;
             this.numericUpDown4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown5
@@ -1115,7 +1117,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown5.Name = "numericUpDown5";
             this.numericUpDown5.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown5.TabIndex = 62;
+            this.numericUpDown5.TabIndex = 16;
             this.numericUpDown5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown6
@@ -1130,7 +1132,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown6.Name = "numericUpDown6";
             this.numericUpDown6.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown6.TabIndex = 61;
+            this.numericUpDown6.TabIndex = 17;
             this.numericUpDown6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown7
@@ -1145,7 +1147,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown7.Name = "numericUpDown7";
             this.numericUpDown7.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown7.TabIndex = 60;
+            this.numericUpDown7.TabIndex = 18;
             this.numericUpDown7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown8
@@ -1160,7 +1162,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown8.Name = "numericUpDown8";
             this.numericUpDown8.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown8.TabIndex = 59;
+            this.numericUpDown8.TabIndex = 25;
             this.numericUpDown8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown9
@@ -1175,7 +1177,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown9.Name = "numericUpDown9";
             this.numericUpDown9.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown9.TabIndex = 58;
+            this.numericUpDown9.TabIndex = 7;
             this.numericUpDown9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown19
@@ -1190,7 +1192,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown19.Name = "numericUpDown19";
             this.numericUpDown19.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown19.TabIndex = 75;
+            this.numericUpDown19.TabIndex = 53;
             this.numericUpDown19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown20
@@ -1205,7 +1207,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown20.Name = "numericUpDown20";
             this.numericUpDown20.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown20.TabIndex = 74;
+            this.numericUpDown20.TabIndex = 54;
             this.numericUpDown20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown21
@@ -1220,7 +1222,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown21.Name = "numericUpDown21";
             this.numericUpDown21.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown21.TabIndex = 73;
+            this.numericUpDown21.TabIndex = 35;
             this.numericUpDown21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown22
@@ -1235,7 +1237,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown22.Name = "numericUpDown22";
             this.numericUpDown22.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown22.TabIndex = 72;
+            this.numericUpDown22.TabIndex = 36;
             this.numericUpDown22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown23
@@ -1250,7 +1252,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown23.Name = "numericUpDown23";
             this.numericUpDown23.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown23.TabIndex = 71;
+            this.numericUpDown23.TabIndex = 43;
             this.numericUpDown23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown24
@@ -1265,7 +1267,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown24.Name = "numericUpDown24";
             this.numericUpDown24.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown24.TabIndex = 70;
+            this.numericUpDown24.TabIndex = 44;
             this.numericUpDown24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown25
@@ -1280,7 +1282,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown25.Name = "numericUpDown25";
             this.numericUpDown25.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown25.TabIndex = 69;
+            this.numericUpDown25.TabIndex = 45;
             this.numericUpDown25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown26
@@ -1295,7 +1297,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown26.Name = "numericUpDown26";
             this.numericUpDown26.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown26.TabIndex = 68;
+            this.numericUpDown26.TabIndex = 52;
             this.numericUpDown26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown27
@@ -1310,7 +1312,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown27.Name = "numericUpDown27";
             this.numericUpDown27.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown27.TabIndex = 67;
+            this.numericUpDown27.TabIndex = 34;
             this.numericUpDown27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown28
@@ -1325,7 +1327,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown28.Name = "numericUpDown28";
             this.numericUpDown28.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown28.TabIndex = 84;
+            this.numericUpDown28.TabIndex = 80;
             this.numericUpDown28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown29
@@ -1340,7 +1342,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown29.Name = "numericUpDown29";
             this.numericUpDown29.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown29.TabIndex = 83;
+            this.numericUpDown29.TabIndex = 81;
             this.numericUpDown29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown30
@@ -1355,7 +1357,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown30.Name = "numericUpDown30";
             this.numericUpDown30.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown30.TabIndex = 82;
+            this.numericUpDown30.TabIndex = 62;
             this.numericUpDown30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown31
@@ -1370,7 +1372,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown31.Name = "numericUpDown31";
             this.numericUpDown31.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown31.TabIndex = 81;
+            this.numericUpDown31.TabIndex = 63;
             this.numericUpDown31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown32
@@ -1385,7 +1387,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown32.Name = "numericUpDown32";
             this.numericUpDown32.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown32.TabIndex = 80;
+            this.numericUpDown32.TabIndex = 70;
             this.numericUpDown32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown33
@@ -1400,7 +1402,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown33.Name = "numericUpDown33";
             this.numericUpDown33.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown33.TabIndex = 79;
+            this.numericUpDown33.TabIndex = 71;
             this.numericUpDown33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown34
@@ -1415,7 +1417,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown34.Name = "numericUpDown34";
             this.numericUpDown34.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown34.TabIndex = 78;
+            this.numericUpDown34.TabIndex = 72;
             this.numericUpDown34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown35
@@ -1430,7 +1432,7 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown35.Name = "numericUpDown35";
             this.numericUpDown35.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown35.TabIndex = 77;
+            this.numericUpDown35.TabIndex = 79;
             this.numericUpDown35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown36
@@ -1445,8 +1447,28 @@ namespace Sudoku_Solver
             0});
             this.numericUpDown36.Name = "numericUpDown36";
             this.numericUpDown36.Size = new System.Drawing.Size(35, 38);
-            this.numericUpDown36.TabIndex = 76;
+            this.numericUpDown36.TabIndex = 61;
             this.numericUpDown36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(92, 183);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(202, 16);
+            this.label5.TabIndex = 82;
+            this.label5.Text = "Press tab key to move along row";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(13, 255);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(302, 16);
+            this.label6.TabIndex = 83;
+            this.label6.Text = "Fill in at least 17 spaces to make sudoku solvable";
             // 
             // SudokuSolver
             // 
@@ -1454,6 +1476,8 @@ namespace Sudoku_Solver
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(999, 632);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.numericUpDown28);
@@ -1624,6 +1648,7 @@ namespace Sudoku_Solver
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown35)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown36)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1714,6 +1739,8 @@ namespace Sudoku_Solver
         private System.Windows.Forms.NumericUpDown numericUpDown34;
         private System.Windows.Forms.NumericUpDown numericUpDown35;
         private System.Windows.Forms.NumericUpDown numericUpDown36;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
 
