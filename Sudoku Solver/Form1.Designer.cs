@@ -117,6 +117,9 @@ namespace Sudoku_Solver
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.SolveButton = new System.Windows.Forms.Button();
+            this.ClearButton = new System.Windows.Forms.Button();
+            this.ViewButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.r1c1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.r3c1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.r2c3)).BeginInit();
@@ -214,6 +217,8 @@ namespace Sudoku_Solver
             this.r1c1.Size = new System.Drawing.Size(35, 38);
             this.r1c1.TabIndex = 1;
             this.r1c1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.r1c1.Enter += new System.EventHandler(this.r1c1_Enter);
+            this.r1c1.Leave += new System.EventHandler(this.r1c1_Leave);
             // 
             // r3c1
             // 
@@ -1455,7 +1460,7 @@ namespace Sudoku_Solver
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(92, 183);
+            this.label5.Location = new System.Drawing.Point(66, 230);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(202, 16);
             this.label5.TabIndex = 82;
@@ -1465,7 +1470,7 @@ namespace Sudoku_Solver
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(13, 255);
+            this.label6.Location = new System.Drawing.Point(11, 339);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(302, 16);
             this.label6.TabIndex = 83;
@@ -1481,12 +1486,45 @@ namespace Sudoku_Solver
             this.label7.TabIndex = 84;
             this.label7.Text = "Arrow keys will increment value in selected space";
             // 
+            // SolveButton
+            // 
+            this.SolveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SolveButton.Location = new System.Drawing.Point(358, 541);
+            this.SolveButton.Name = "SolveButton";
+            this.SolveButton.Size = new System.Drawing.Size(75, 30);
+            this.SolveButton.TabIndex = 85;
+            this.SolveButton.Text = "Solve";
+            this.SolveButton.UseVisualStyleBackColor = true;
+            // 
+            // ClearButton
+            // 
+            this.ClearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClearButton.Location = new System.Drawing.Point(564, 541);
+            this.ClearButton.Name = "ClearButton";
+            this.ClearButton.Size = new System.Drawing.Size(75, 30);
+            this.ClearButton.TabIndex = 86;
+            this.ClearButton.Text = "Clear";
+            this.ClearButton.UseVisualStyleBackColor = true;
+            // 
+            // ViewButton
+            // 
+            this.ViewButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewButton.Location = new System.Drawing.Point(456, 531);
+            this.ViewButton.Name = "ViewButton";
+            this.ViewButton.Size = new System.Drawing.Size(85, 50);
+            this.ViewButton.TabIndex = 87;
+            this.ViewButton.Text = "View\r\nSolution";
+            this.ViewButton.UseVisualStyleBackColor = true;
+            // 
             // SudokuSolver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(999, 632);
+            this.Controls.Add(this.ViewButton);
+            this.Controls.Add(this.ClearButton);
+            this.Controls.Add(this.SolveButton);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -1754,6 +1792,9 @@ namespace Sudoku_Solver
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button SolveButton;
+        private System.Windows.Forms.Button ClearButton;
+        private System.Windows.Forms.Button ViewButton;
     }
 }
 
