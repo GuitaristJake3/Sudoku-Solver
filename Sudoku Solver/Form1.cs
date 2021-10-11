@@ -16,5 +16,15 @@ namespace Sudoku_Solver
         {
             InitializeComponent();
         }
+
+        private void r1c1_Enter(object sender, EventArgs e)
+        {
+            r1c1.BackColor = Color.Yellow;
+        }
+
+        private void r1c1_Leave(object sender, EventArgs e)
+        {
+            r1c1.BackColor = Color.White;
+        }
     }
 }
