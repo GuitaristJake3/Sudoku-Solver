@@ -117,9 +117,19 @@ namespace Sudoku_Solver
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.SolveButton = new System.Windows.Forms.Button();
-            this.ClearButton = new System.Windows.Forms.Button();
-            this.ViewButton = new System.Windows.Forms.Button();
+            this.solveButton = new System.Windows.Forms.Button();
+            this.clearButton = new System.Windows.Forms.Button();
+            this.viewButton = new System.Windows.Forms.Button();
+            this.rulesLabel = new System.Windows.Forms.Label();
+            this.tipsLabel = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.r1c1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.r3c1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.r2c3)).BeginInit();
@@ -206,7 +216,7 @@ namespace Sudoku_Solver
             // r1c1
             // 
             this.r1c1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r1c1.Location = new System.Drawing.Point(320, 124);
+            this.r1c1.Location = new System.Drawing.Point(320, 68);
             this.r1c1.Margin = new System.Windows.Forms.Padding(2);
             this.r1c1.Maximum = new decimal(new int[] {
             9,
@@ -223,7 +233,7 @@ namespace Sudoku_Solver
             // r3c1
             // 
             this.r3c1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r3c1.Location = new System.Drawing.Point(320, 208);
+            this.r3c1.Location = new System.Drawing.Point(320, 152);
             this.r3c1.Margin = new System.Windows.Forms.Padding(2);
             this.r3c1.Maximum = new decimal(new int[] {
             9,
@@ -238,7 +248,7 @@ namespace Sudoku_Solver
             // r2c3
             // 
             this.r2c3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r2c3.Location = new System.Drawing.Point(398, 166);
+            this.r2c3.Location = new System.Drawing.Point(398, 110);
             this.r2c3.Margin = new System.Windows.Forms.Padding(2);
             this.r2c3.Maximum = new decimal(new int[] {
             9,
@@ -253,7 +263,7 @@ namespace Sudoku_Solver
             // r2c2
             // 
             this.r2c2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r2c2.Location = new System.Drawing.Point(359, 166);
+            this.r2c2.Location = new System.Drawing.Point(359, 110);
             this.r2c2.Margin = new System.Windows.Forms.Padding(2);
             this.r2c2.Maximum = new decimal(new int[] {
             9,
@@ -268,7 +278,7 @@ namespace Sudoku_Solver
             // r2c1
             // 
             this.r2c1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r2c1.Location = new System.Drawing.Point(320, 166);
+            this.r2c1.Location = new System.Drawing.Point(320, 110);
             this.r2c1.Margin = new System.Windows.Forms.Padding(2);
             this.r2c1.Maximum = new decimal(new int[] {
             9,
@@ -283,7 +293,7 @@ namespace Sudoku_Solver
             // r1c3
             // 
             this.r1c3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r1c3.Location = new System.Drawing.Point(398, 124);
+            this.r1c3.Location = new System.Drawing.Point(398, 68);
             this.r1c3.Margin = new System.Windows.Forms.Padding(2);
             this.r1c3.Maximum = new decimal(new int[] {
             9,
@@ -298,7 +308,7 @@ namespace Sudoku_Solver
             // r1c2
             // 
             this.r1c2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r1c2.Location = new System.Drawing.Point(359, 124);
+            this.r1c2.Location = new System.Drawing.Point(359, 68);
             this.r1c2.Margin = new System.Windows.Forms.Padding(2);
             this.r1c2.Maximum = new decimal(new int[] {
             9,
@@ -313,7 +323,7 @@ namespace Sudoku_Solver
             // r3c3
             // 
             this.r3c3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r3c3.Location = new System.Drawing.Point(398, 208);
+            this.r3c3.Location = new System.Drawing.Point(398, 152);
             this.r3c3.Margin = new System.Windows.Forms.Padding(2);
             this.r3c3.Maximum = new decimal(new int[] {
             9,
@@ -328,7 +338,7 @@ namespace Sudoku_Solver
             // r3c2
             // 
             this.r3c2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r3c2.Location = new System.Drawing.Point(359, 208);
+            this.r3c2.Location = new System.Drawing.Point(359, 152);
             this.r3c2.Margin = new System.Windows.Forms.Padding(2);
             this.r3c2.Maximum = new decimal(new int[] {
             9,
@@ -343,7 +353,7 @@ namespace Sudoku_Solver
             // r3c5
             // 
             this.r3c5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r3c5.Location = new System.Drawing.Point(481, 208);
+            this.r3c5.Location = new System.Drawing.Point(481, 152);
             this.r3c5.Margin = new System.Windows.Forms.Padding(2);
             this.r3c5.Maximum = new decimal(new int[] {
             9,
@@ -358,7 +368,7 @@ namespace Sudoku_Solver
             // r3c6
             // 
             this.r3c6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r3c6.Location = new System.Drawing.Point(520, 208);
+            this.r3c6.Location = new System.Drawing.Point(520, 152);
             this.r3c6.Margin = new System.Windows.Forms.Padding(2);
             this.r3c6.Maximum = new decimal(new int[] {
             9,
@@ -373,7 +383,7 @@ namespace Sudoku_Solver
             // r1c5
             // 
             this.r1c5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r1c5.Location = new System.Drawing.Point(481, 124);
+            this.r1c5.Location = new System.Drawing.Point(481, 68);
             this.r1c5.Margin = new System.Windows.Forms.Padding(2);
             this.r1c5.Maximum = new decimal(new int[] {
             9,
@@ -388,7 +398,7 @@ namespace Sudoku_Solver
             // r1c6
             // 
             this.r1c6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r1c6.Location = new System.Drawing.Point(520, 124);
+            this.r1c6.Location = new System.Drawing.Point(520, 68);
             this.r1c6.Margin = new System.Windows.Forms.Padding(2);
             this.r1c6.Maximum = new decimal(new int[] {
             9,
@@ -403,7 +413,7 @@ namespace Sudoku_Solver
             // r2c4
             // 
             this.r2c4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r2c4.Location = new System.Drawing.Point(442, 166);
+            this.r2c4.Location = new System.Drawing.Point(442, 110);
             this.r2c4.Margin = new System.Windows.Forms.Padding(2);
             this.r2c4.Maximum = new decimal(new int[] {
             9,
@@ -418,7 +428,7 @@ namespace Sudoku_Solver
             // r2c5
             // 
             this.r2c5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r2c5.Location = new System.Drawing.Point(481, 166);
+            this.r2c5.Location = new System.Drawing.Point(481, 110);
             this.r2c5.Margin = new System.Windows.Forms.Padding(2);
             this.r2c5.Maximum = new decimal(new int[] {
             9,
@@ -433,7 +443,7 @@ namespace Sudoku_Solver
             // r2c6
             // 
             this.r2c6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r2c6.Location = new System.Drawing.Point(520, 166);
+            this.r2c6.Location = new System.Drawing.Point(520, 110);
             this.r2c6.Margin = new System.Windows.Forms.Padding(2);
             this.r2c6.Maximum = new decimal(new int[] {
             9,
@@ -448,7 +458,7 @@ namespace Sudoku_Solver
             // r3c4
             // 
             this.r3c4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r3c4.Location = new System.Drawing.Point(442, 208);
+            this.r3c4.Location = new System.Drawing.Point(442, 152);
             this.r3c4.Margin = new System.Windows.Forms.Padding(2);
             this.r3c4.Maximum = new decimal(new int[] {
             9,
@@ -463,7 +473,7 @@ namespace Sudoku_Solver
             // r1c4
             // 
             this.r1c4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r1c4.Location = new System.Drawing.Point(442, 124);
+            this.r1c4.Location = new System.Drawing.Point(442, 68);
             this.r1c4.Margin = new System.Windows.Forms.Padding(2);
             this.r1c4.Maximum = new decimal(new int[] {
             9,
@@ -478,7 +488,7 @@ namespace Sudoku_Solver
             // label1
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(437, 124);
+            this.label1.Location = new System.Drawing.Point(437, 68);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(2, 385);
             this.label1.TabIndex = 18;
@@ -487,7 +497,7 @@ namespace Sudoku_Solver
             // label2
             // 
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Location = new System.Drawing.Point(320, 250);
+            this.label2.Location = new System.Drawing.Point(320, 194);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(358, 2);
             this.label2.TabIndex = 19;
@@ -496,7 +506,7 @@ namespace Sudoku_Solver
             // r6c2
             // 
             this.r6c2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r6c2.Location = new System.Drawing.Point(359, 339);
+            this.r6c2.Location = new System.Drawing.Point(359, 283);
             this.r6c2.Margin = new System.Windows.Forms.Padding(2);
             this.r6c2.Maximum = new decimal(new int[] {
             9,
@@ -511,7 +521,7 @@ namespace Sudoku_Solver
             // r6c3
             // 
             this.r6c3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r6c3.Location = new System.Drawing.Point(398, 339);
+            this.r6c3.Location = new System.Drawing.Point(398, 283);
             this.r6c3.Margin = new System.Windows.Forms.Padding(2);
             this.r6c3.Maximum = new decimal(new int[] {
             9,
@@ -526,7 +536,7 @@ namespace Sudoku_Solver
             // r4c2
             // 
             this.r4c2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r4c2.Location = new System.Drawing.Point(359, 255);
+            this.r4c2.Location = new System.Drawing.Point(359, 199);
             this.r4c2.Margin = new System.Windows.Forms.Padding(2);
             this.r4c2.Maximum = new decimal(new int[] {
             9,
@@ -541,7 +551,7 @@ namespace Sudoku_Solver
             // r4c3
             // 
             this.r4c3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r4c3.Location = new System.Drawing.Point(398, 255);
+            this.r4c3.Location = new System.Drawing.Point(398, 199);
             this.r4c3.Margin = new System.Windows.Forms.Padding(2);
             this.r4c3.Maximum = new decimal(new int[] {
             9,
@@ -556,7 +566,7 @@ namespace Sudoku_Solver
             // r5c1
             // 
             this.r5c1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r5c1.Location = new System.Drawing.Point(320, 297);
+            this.r5c1.Location = new System.Drawing.Point(320, 241);
             this.r5c1.Margin = new System.Windows.Forms.Padding(2);
             this.r5c1.Maximum = new decimal(new int[] {
             9,
@@ -571,7 +581,7 @@ namespace Sudoku_Solver
             // r5c2
             // 
             this.r5c2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r5c2.Location = new System.Drawing.Point(359, 297);
+            this.r5c2.Location = new System.Drawing.Point(359, 241);
             this.r5c2.Margin = new System.Windows.Forms.Padding(2);
             this.r5c2.Maximum = new decimal(new int[] {
             9,
@@ -586,7 +596,7 @@ namespace Sudoku_Solver
             // r5c3
             // 
             this.r5c3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r5c3.Location = new System.Drawing.Point(398, 297);
+            this.r5c3.Location = new System.Drawing.Point(398, 241);
             this.r5c3.Margin = new System.Windows.Forms.Padding(2);
             this.r5c3.Maximum = new decimal(new int[] {
             9,
@@ -601,7 +611,7 @@ namespace Sudoku_Solver
             // r6c1
             // 
             this.r6c1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r6c1.Location = new System.Drawing.Point(320, 339);
+            this.r6c1.Location = new System.Drawing.Point(320, 283);
             this.r6c1.Margin = new System.Windows.Forms.Padding(2);
             this.r6c1.Maximum = new decimal(new int[] {
             9,
@@ -616,7 +626,7 @@ namespace Sudoku_Solver
             // r4c1
             // 
             this.r4c1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r4c1.Location = new System.Drawing.Point(320, 255);
+            this.r4c1.Location = new System.Drawing.Point(320, 199);
             this.r4c1.Margin = new System.Windows.Forms.Padding(2);
             this.r4c1.Maximum = new decimal(new int[] {
             9,
@@ -631,7 +641,7 @@ namespace Sudoku_Solver
             // r6c5
             // 
             this.r6c5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r6c5.Location = new System.Drawing.Point(481, 339);
+            this.r6c5.Location = new System.Drawing.Point(481, 283);
             this.r6c5.Margin = new System.Windows.Forms.Padding(2);
             this.r6c5.Maximum = new decimal(new int[] {
             9,
@@ -646,7 +656,7 @@ namespace Sudoku_Solver
             // r6c6
             // 
             this.r6c6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r6c6.Location = new System.Drawing.Point(520, 339);
+            this.r6c6.Location = new System.Drawing.Point(520, 283);
             this.r6c6.Margin = new System.Windows.Forms.Padding(2);
             this.r6c6.Maximum = new decimal(new int[] {
             9,
@@ -661,7 +671,7 @@ namespace Sudoku_Solver
             // r4c5
             // 
             this.r4c5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r4c5.Location = new System.Drawing.Point(481, 255);
+            this.r4c5.Location = new System.Drawing.Point(481, 199);
             this.r4c5.Margin = new System.Windows.Forms.Padding(2);
             this.r4c5.Maximum = new decimal(new int[] {
             9,
@@ -676,7 +686,7 @@ namespace Sudoku_Solver
             // r4c6
             // 
             this.r4c6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r4c6.Location = new System.Drawing.Point(520, 255);
+            this.r4c6.Location = new System.Drawing.Point(520, 199);
             this.r4c6.Margin = new System.Windows.Forms.Padding(2);
             this.r4c6.Maximum = new decimal(new int[] {
             9,
@@ -691,7 +701,7 @@ namespace Sudoku_Solver
             // r5c4
             // 
             this.r5c4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r5c4.Location = new System.Drawing.Point(442, 297);
+            this.r5c4.Location = new System.Drawing.Point(442, 241);
             this.r5c4.Margin = new System.Windows.Forms.Padding(2);
             this.r5c4.Maximum = new decimal(new int[] {
             9,
@@ -706,7 +716,7 @@ namespace Sudoku_Solver
             // r5c5
             // 
             this.r5c5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r5c5.Location = new System.Drawing.Point(481, 297);
+            this.r5c5.Location = new System.Drawing.Point(481, 241);
             this.r5c5.Margin = new System.Windows.Forms.Padding(2);
             this.r5c5.Maximum = new decimal(new int[] {
             9,
@@ -721,7 +731,7 @@ namespace Sudoku_Solver
             // r5c6
             // 
             this.r5c6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r5c6.Location = new System.Drawing.Point(520, 297);
+            this.r5c6.Location = new System.Drawing.Point(520, 241);
             this.r5c6.Margin = new System.Windows.Forms.Padding(2);
             this.r5c6.Maximum = new decimal(new int[] {
             9,
@@ -736,7 +746,7 @@ namespace Sudoku_Solver
             // r6c4
             // 
             this.r6c4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r6c4.Location = new System.Drawing.Point(442, 339);
+            this.r6c4.Location = new System.Drawing.Point(442, 283);
             this.r6c4.Margin = new System.Windows.Forms.Padding(2);
             this.r6c4.Maximum = new decimal(new int[] {
             9,
@@ -751,7 +761,7 @@ namespace Sudoku_Solver
             // r4c4
             // 
             this.r4c4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r4c4.Location = new System.Drawing.Point(442, 255);
+            this.r4c4.Location = new System.Drawing.Point(442, 199);
             this.r4c4.Margin = new System.Windows.Forms.Padding(2);
             this.r4c4.Maximum = new decimal(new int[] {
             9,
@@ -766,7 +776,7 @@ namespace Sudoku_Solver
             // r9c2
             // 
             this.r9c2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r9c2.Location = new System.Drawing.Point(359, 470);
+            this.r9c2.Location = new System.Drawing.Point(359, 414);
             this.r9c2.Margin = new System.Windows.Forms.Padding(2);
             this.r9c2.Maximum = new decimal(new int[] {
             9,
@@ -781,7 +791,7 @@ namespace Sudoku_Solver
             // r9c3
             // 
             this.r9c3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r9c3.Location = new System.Drawing.Point(398, 470);
+            this.r9c3.Location = new System.Drawing.Point(398, 414);
             this.r9c3.Margin = new System.Windows.Forms.Padding(2);
             this.r9c3.Maximum = new decimal(new int[] {
             9,
@@ -796,7 +806,7 @@ namespace Sudoku_Solver
             // r7c2
             // 
             this.r7c2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r7c2.Location = new System.Drawing.Point(359, 386);
+            this.r7c2.Location = new System.Drawing.Point(359, 330);
             this.r7c2.Margin = new System.Windows.Forms.Padding(2);
             this.r7c2.Maximum = new decimal(new int[] {
             9,
@@ -811,7 +821,7 @@ namespace Sudoku_Solver
             // r7c3
             // 
             this.r7c3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r7c3.Location = new System.Drawing.Point(398, 386);
+            this.r7c3.Location = new System.Drawing.Point(398, 330);
             this.r7c3.Margin = new System.Windows.Forms.Padding(2);
             this.r7c3.Maximum = new decimal(new int[] {
             9,
@@ -826,7 +836,7 @@ namespace Sudoku_Solver
             // r8c1
             // 
             this.r8c1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r8c1.Location = new System.Drawing.Point(320, 428);
+            this.r8c1.Location = new System.Drawing.Point(320, 372);
             this.r8c1.Margin = new System.Windows.Forms.Padding(2);
             this.r8c1.Maximum = new decimal(new int[] {
             9,
@@ -841,7 +851,7 @@ namespace Sudoku_Solver
             // r8c2
             // 
             this.r8c2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r8c2.Location = new System.Drawing.Point(359, 428);
+            this.r8c2.Location = new System.Drawing.Point(359, 372);
             this.r8c2.Margin = new System.Windows.Forms.Padding(2);
             this.r8c2.Maximum = new decimal(new int[] {
             9,
@@ -856,7 +866,7 @@ namespace Sudoku_Solver
             // r8c3
             // 
             this.r8c3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r8c3.Location = new System.Drawing.Point(398, 428);
+            this.r8c3.Location = new System.Drawing.Point(398, 372);
             this.r8c3.Margin = new System.Windows.Forms.Padding(2);
             this.r8c3.Maximum = new decimal(new int[] {
             9,
@@ -871,7 +881,7 @@ namespace Sudoku_Solver
             // r9c1
             // 
             this.r9c1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r9c1.Location = new System.Drawing.Point(320, 470);
+            this.r9c1.Location = new System.Drawing.Point(320, 414);
             this.r9c1.Margin = new System.Windows.Forms.Padding(2);
             this.r9c1.Maximum = new decimal(new int[] {
             9,
@@ -886,7 +896,7 @@ namespace Sudoku_Solver
             // r7c1
             // 
             this.r7c1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r7c1.Location = new System.Drawing.Point(320, 386);
+            this.r7c1.Location = new System.Drawing.Point(320, 330);
             this.r7c1.Margin = new System.Windows.Forms.Padding(2);
             this.r7c1.Maximum = new decimal(new int[] {
             9,
@@ -901,7 +911,7 @@ namespace Sudoku_Solver
             // label3
             // 
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.Location = new System.Drawing.Point(320, 381);
+            this.label3.Location = new System.Drawing.Point(320, 325);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(358, 2);
             this.label3.TabIndex = 47;
@@ -910,7 +920,7 @@ namespace Sudoku_Solver
             // r9c5
             // 
             this.r9c5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r9c5.Location = new System.Drawing.Point(481, 470);
+            this.r9c5.Location = new System.Drawing.Point(481, 414);
             this.r9c5.Margin = new System.Windows.Forms.Padding(2);
             this.r9c5.Maximum = new decimal(new int[] {
             9,
@@ -925,7 +935,7 @@ namespace Sudoku_Solver
             // r9c6
             // 
             this.r9c6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r9c6.Location = new System.Drawing.Point(520, 470);
+            this.r9c6.Location = new System.Drawing.Point(520, 414);
             this.r9c6.Margin = new System.Windows.Forms.Padding(2);
             this.r9c6.Maximum = new decimal(new int[] {
             9,
@@ -940,7 +950,7 @@ namespace Sudoku_Solver
             // r7c5
             // 
             this.r7c5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r7c5.Location = new System.Drawing.Point(481, 386);
+            this.r7c5.Location = new System.Drawing.Point(481, 330);
             this.r7c5.Margin = new System.Windows.Forms.Padding(2);
             this.r7c5.Maximum = new decimal(new int[] {
             9,
@@ -955,7 +965,7 @@ namespace Sudoku_Solver
             // r7c6
             // 
             this.r7c6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r7c6.Location = new System.Drawing.Point(520, 386);
+            this.r7c6.Location = new System.Drawing.Point(520, 330);
             this.r7c6.Margin = new System.Windows.Forms.Padding(2);
             this.r7c6.Maximum = new decimal(new int[] {
             9,
@@ -970,7 +980,7 @@ namespace Sudoku_Solver
             // r8c4
             // 
             this.r8c4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r8c4.Location = new System.Drawing.Point(442, 428);
+            this.r8c4.Location = new System.Drawing.Point(442, 372);
             this.r8c4.Margin = new System.Windows.Forms.Padding(2);
             this.r8c4.Maximum = new decimal(new int[] {
             9,
@@ -985,7 +995,7 @@ namespace Sudoku_Solver
             // r8c5
             // 
             this.r8c5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r8c5.Location = new System.Drawing.Point(481, 428);
+            this.r8c5.Location = new System.Drawing.Point(481, 372);
             this.r8c5.Margin = new System.Windows.Forms.Padding(2);
             this.r8c5.Maximum = new decimal(new int[] {
             9,
@@ -1000,7 +1010,7 @@ namespace Sudoku_Solver
             // r8c6
             // 
             this.r8c6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r8c6.Location = new System.Drawing.Point(520, 428);
+            this.r8c6.Location = new System.Drawing.Point(520, 372);
             this.r8c6.Margin = new System.Windows.Forms.Padding(2);
             this.r8c6.Maximum = new decimal(new int[] {
             9,
@@ -1015,7 +1025,7 @@ namespace Sudoku_Solver
             // r9c4
             // 
             this.r9c4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r9c4.Location = new System.Drawing.Point(442, 470);
+            this.r9c4.Location = new System.Drawing.Point(442, 414);
             this.r9c4.Margin = new System.Windows.Forms.Padding(2);
             this.r9c4.Maximum = new decimal(new int[] {
             9,
@@ -1030,7 +1040,7 @@ namespace Sudoku_Solver
             // r7c4
             // 
             this.r7c4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r7c4.Location = new System.Drawing.Point(442, 386);
+            this.r7c4.Location = new System.Drawing.Point(442, 330);
             this.r7c4.Margin = new System.Windows.Forms.Padding(2);
             this.r7c4.Maximum = new decimal(new int[] {
             9,
@@ -1045,7 +1055,7 @@ namespace Sudoku_Solver
             // label4
             // 
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label4.Location = new System.Drawing.Point(559, 124);
+            this.label4.Location = new System.Drawing.Point(559, 68);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(2, 385);
             this.label4.TabIndex = 57;
@@ -1054,7 +1064,7 @@ namespace Sudoku_Solver
             // r3c8
             // 
             this.r3c8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r3c8.Location = new System.Drawing.Point(603, 208);
+            this.r3c8.Location = new System.Drawing.Point(603, 152);
             this.r3c8.Margin = new System.Windows.Forms.Padding(2);
             this.r3c8.Maximum = new decimal(new int[] {
             9,
@@ -1069,7 +1079,7 @@ namespace Sudoku_Solver
             // r3c9
             // 
             this.r3c9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r3c9.Location = new System.Drawing.Point(642, 208);
+            this.r3c9.Location = new System.Drawing.Point(642, 152);
             this.r3c9.Margin = new System.Windows.Forms.Padding(2);
             this.r3c9.Maximum = new decimal(new int[] {
             9,
@@ -1084,7 +1094,7 @@ namespace Sudoku_Solver
             // r1c8
             // 
             this.r1c8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r1c8.Location = new System.Drawing.Point(603, 124);
+            this.r1c8.Location = new System.Drawing.Point(603, 68);
             this.r1c8.Margin = new System.Windows.Forms.Padding(2);
             this.r1c8.Maximum = new decimal(new int[] {
             9,
@@ -1099,7 +1109,7 @@ namespace Sudoku_Solver
             // r1c9
             // 
             this.r1c9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r1c9.Location = new System.Drawing.Point(642, 124);
+            this.r1c9.Location = new System.Drawing.Point(642, 68);
             this.r1c9.Margin = new System.Windows.Forms.Padding(2);
             this.r1c9.Maximum = new decimal(new int[] {
             9,
@@ -1114,7 +1124,7 @@ namespace Sudoku_Solver
             // r2c7
             // 
             this.r2c7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r2c7.Location = new System.Drawing.Point(564, 166);
+            this.r2c7.Location = new System.Drawing.Point(564, 110);
             this.r2c7.Margin = new System.Windows.Forms.Padding(2);
             this.r2c7.Maximum = new decimal(new int[] {
             9,
@@ -1129,7 +1139,7 @@ namespace Sudoku_Solver
             // r2c8
             // 
             this.r2c8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r2c8.Location = new System.Drawing.Point(603, 166);
+            this.r2c8.Location = new System.Drawing.Point(603, 110);
             this.r2c8.Margin = new System.Windows.Forms.Padding(2);
             this.r2c8.Maximum = new decimal(new int[] {
             9,
@@ -1144,7 +1154,7 @@ namespace Sudoku_Solver
             // r2c9
             // 
             this.r2c9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r2c9.Location = new System.Drawing.Point(642, 166);
+            this.r2c9.Location = new System.Drawing.Point(642, 110);
             this.r2c9.Margin = new System.Windows.Forms.Padding(2);
             this.r2c9.Maximum = new decimal(new int[] {
             9,
@@ -1159,7 +1169,7 @@ namespace Sudoku_Solver
             // r3c7
             // 
             this.r3c7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r3c7.Location = new System.Drawing.Point(564, 208);
+            this.r3c7.Location = new System.Drawing.Point(564, 152);
             this.r3c7.Margin = new System.Windows.Forms.Padding(2);
             this.r3c7.Maximum = new decimal(new int[] {
             9,
@@ -1174,7 +1184,7 @@ namespace Sudoku_Solver
             // r1c7
             // 
             this.r1c7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r1c7.Location = new System.Drawing.Point(564, 124);
+            this.r1c7.Location = new System.Drawing.Point(564, 68);
             this.r1c7.Margin = new System.Windows.Forms.Padding(2);
             this.r1c7.Maximum = new decimal(new int[] {
             9,
@@ -1189,7 +1199,7 @@ namespace Sudoku_Solver
             // r6c8
             // 
             this.r6c8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r6c8.Location = new System.Drawing.Point(603, 339);
+            this.r6c8.Location = new System.Drawing.Point(603, 283);
             this.r6c8.Margin = new System.Windows.Forms.Padding(2);
             this.r6c8.Maximum = new decimal(new int[] {
             9,
@@ -1204,7 +1214,7 @@ namespace Sudoku_Solver
             // r6c9
             // 
             this.r6c9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r6c9.Location = new System.Drawing.Point(642, 339);
+            this.r6c9.Location = new System.Drawing.Point(642, 283);
             this.r6c9.Margin = new System.Windows.Forms.Padding(2);
             this.r6c9.Maximum = new decimal(new int[] {
             9,
@@ -1219,7 +1229,7 @@ namespace Sudoku_Solver
             // r4c8
             // 
             this.r4c8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r4c8.Location = new System.Drawing.Point(603, 255);
+            this.r4c8.Location = new System.Drawing.Point(603, 199);
             this.r4c8.Margin = new System.Windows.Forms.Padding(2);
             this.r4c8.Maximum = new decimal(new int[] {
             9,
@@ -1234,7 +1244,7 @@ namespace Sudoku_Solver
             // r4c9
             // 
             this.r4c9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r4c9.Location = new System.Drawing.Point(642, 255);
+            this.r4c9.Location = new System.Drawing.Point(642, 199);
             this.r4c9.Margin = new System.Windows.Forms.Padding(2);
             this.r4c9.Maximum = new decimal(new int[] {
             9,
@@ -1249,7 +1259,7 @@ namespace Sudoku_Solver
             // r5c7
             // 
             this.r5c7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r5c7.Location = new System.Drawing.Point(564, 297);
+            this.r5c7.Location = new System.Drawing.Point(564, 241);
             this.r5c7.Margin = new System.Windows.Forms.Padding(2);
             this.r5c7.Maximum = new decimal(new int[] {
             9,
@@ -1264,7 +1274,7 @@ namespace Sudoku_Solver
             // r5c8
             // 
             this.r5c8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r5c8.Location = new System.Drawing.Point(603, 297);
+            this.r5c8.Location = new System.Drawing.Point(603, 241);
             this.r5c8.Margin = new System.Windows.Forms.Padding(2);
             this.r5c8.Maximum = new decimal(new int[] {
             9,
@@ -1279,7 +1289,7 @@ namespace Sudoku_Solver
             // r5c9
             // 
             this.r5c9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r5c9.Location = new System.Drawing.Point(642, 297);
+            this.r5c9.Location = new System.Drawing.Point(642, 241);
             this.r5c9.Margin = new System.Windows.Forms.Padding(2);
             this.r5c9.Maximum = new decimal(new int[] {
             9,
@@ -1294,7 +1304,7 @@ namespace Sudoku_Solver
             // r6c7
             // 
             this.r6c7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r6c7.Location = new System.Drawing.Point(564, 339);
+            this.r6c7.Location = new System.Drawing.Point(564, 283);
             this.r6c7.Margin = new System.Windows.Forms.Padding(2);
             this.r6c7.Maximum = new decimal(new int[] {
             9,
@@ -1309,7 +1319,7 @@ namespace Sudoku_Solver
             // r4c7
             // 
             this.r4c7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r4c7.Location = new System.Drawing.Point(564, 255);
+            this.r4c7.Location = new System.Drawing.Point(564, 199);
             this.r4c7.Margin = new System.Windows.Forms.Padding(2);
             this.r4c7.Maximum = new decimal(new int[] {
             9,
@@ -1324,7 +1334,7 @@ namespace Sudoku_Solver
             // r9c8
             // 
             this.r9c8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r9c8.Location = new System.Drawing.Point(603, 470);
+            this.r9c8.Location = new System.Drawing.Point(603, 414);
             this.r9c8.Margin = new System.Windows.Forms.Padding(2);
             this.r9c8.Maximum = new decimal(new int[] {
             9,
@@ -1339,7 +1349,7 @@ namespace Sudoku_Solver
             // r9c9
             // 
             this.r9c9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r9c9.Location = new System.Drawing.Point(642, 470);
+            this.r9c9.Location = new System.Drawing.Point(642, 414);
             this.r9c9.Margin = new System.Windows.Forms.Padding(2);
             this.r9c9.Maximum = new decimal(new int[] {
             9,
@@ -1354,7 +1364,7 @@ namespace Sudoku_Solver
             // r7c8
             // 
             this.r7c8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r7c8.Location = new System.Drawing.Point(603, 386);
+            this.r7c8.Location = new System.Drawing.Point(603, 330);
             this.r7c8.Margin = new System.Windows.Forms.Padding(2);
             this.r7c8.Maximum = new decimal(new int[] {
             9,
@@ -1369,7 +1379,7 @@ namespace Sudoku_Solver
             // r7c9
             // 
             this.r7c9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r7c9.Location = new System.Drawing.Point(642, 386);
+            this.r7c9.Location = new System.Drawing.Point(642, 330);
             this.r7c9.Margin = new System.Windows.Forms.Padding(2);
             this.r7c9.Maximum = new decimal(new int[] {
             9,
@@ -1384,7 +1394,7 @@ namespace Sudoku_Solver
             // r8c7
             // 
             this.r8c7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r8c7.Location = new System.Drawing.Point(564, 428);
+            this.r8c7.Location = new System.Drawing.Point(564, 372);
             this.r8c7.Margin = new System.Windows.Forms.Padding(2);
             this.r8c7.Maximum = new decimal(new int[] {
             9,
@@ -1399,7 +1409,7 @@ namespace Sudoku_Solver
             // r8c8
             // 
             this.r8c8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r8c8.Location = new System.Drawing.Point(603, 428);
+            this.r8c8.Location = new System.Drawing.Point(603, 372);
             this.r8c8.Margin = new System.Windows.Forms.Padding(2);
             this.r8c8.Maximum = new decimal(new int[] {
             9,
@@ -1414,7 +1424,7 @@ namespace Sudoku_Solver
             // r8c9
             // 
             this.r8c9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r8c9.Location = new System.Drawing.Point(642, 428);
+            this.r8c9.Location = new System.Drawing.Point(642, 372);
             this.r8c9.Margin = new System.Windows.Forms.Padding(2);
             this.r8c9.Maximum = new decimal(new int[] {
             9,
@@ -1429,7 +1439,7 @@ namespace Sudoku_Solver
             // r9c7
             // 
             this.r9c7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r9c7.Location = new System.Drawing.Point(564, 470);
+            this.r9c7.Location = new System.Drawing.Point(564, 414);
             this.r9c7.Margin = new System.Windows.Forms.Padding(2);
             this.r9c7.Maximum = new decimal(new int[] {
             9,
@@ -1444,7 +1454,7 @@ namespace Sudoku_Solver
             // r7c7
             // 
             this.r7c7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r7c7.Location = new System.Drawing.Point(564, 386);
+            this.r7c7.Location = new System.Drawing.Point(564, 330);
             this.r7c7.Margin = new System.Windows.Forms.Padding(2);
             this.r7c7.Maximum = new decimal(new int[] {
             9,
@@ -1460,71 +1470,181 @@ namespace Sudoku_Solver
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(66, 230);
+            this.label5.Location = new System.Drawing.Point(696, 110);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(202, 16);
+            this.label5.Size = new System.Drawing.Size(209, 16);
             this.label5.TabIndex = 82;
-            this.label5.Text = "Press tab key to move along row";
+            this.label5.Text = "- Press tab key to move along row";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(11, 339);
+            this.label6.Location = new System.Drawing.Point(696, 194);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(302, 16);
+            this.label6.Size = new System.Drawing.Size(296, 16);
             this.label6.TabIndex = 83;
-            this.label6.Text = "Fill in at least 17 spaces to make sudoku solvable";
+            this.label6.Text = "- Fill at least 17 spaces to make sudoku solvable";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 297);
+            this.label7.Location = new System.Drawing.Point(696, 152);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(301, 16);
+            this.label7.Size = new System.Drawing.Size(290, 16);
             this.label7.TabIndex = 84;
-            this.label7.Text = "Arrow keys will increment value in selected space";
+            this.label7.Text = "- Arrow keys  increment value in selected space";
             // 
-            // SolveButton
+            // solveButton
             // 
-            this.SolveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SolveButton.Location = new System.Drawing.Point(358, 541);
-            this.SolveButton.Name = "SolveButton";
-            this.SolveButton.Size = new System.Drawing.Size(75, 30);
-            this.SolveButton.TabIndex = 85;
-            this.SolveButton.Text = "Solve";
-            this.SolveButton.UseVisualStyleBackColor = true;
+            this.solveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.solveButton.Location = new System.Drawing.Point(358, 485);
+            this.solveButton.Name = "solveButton";
+            this.solveButton.Size = new System.Drawing.Size(75, 30);
+            this.solveButton.TabIndex = 85;
+            this.solveButton.Text = "Solve";
+            this.solveButton.UseVisualStyleBackColor = true;
             // 
-            // ClearButton
+            // clearButton
             // 
-            this.ClearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClearButton.Location = new System.Drawing.Point(564, 541);
-            this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(75, 30);
-            this.ClearButton.TabIndex = 86;
-            this.ClearButton.Text = "Clear";
-            this.ClearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearButton.Location = new System.Drawing.Point(564, 485);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(75, 30);
+            this.clearButton.TabIndex = 86;
+            this.clearButton.Text = "Clear";
+            this.clearButton.UseVisualStyleBackColor = true;
             // 
-            // ViewButton
+            // viewButton
             // 
-            this.ViewButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ViewButton.Location = new System.Drawing.Point(456, 531);
-            this.ViewButton.Name = "ViewButton";
-            this.ViewButton.Size = new System.Drawing.Size(85, 50);
-            this.ViewButton.TabIndex = 87;
-            this.ViewButton.Text = "View\r\nSolution";
-            this.ViewButton.UseVisualStyleBackColor = true;
+            this.viewButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewButton.Location = new System.Drawing.Point(456, 475);
+            this.viewButton.Name = "viewButton";
+            this.viewButton.Size = new System.Drawing.Size(85, 50);
+            this.viewButton.TabIndex = 87;
+            this.viewButton.Text = "View\r\nSolution";
+            this.viewButton.UseVisualStyleBackColor = true;
+            this.viewButton.Visible = false;
+            // 
+            // rulesLabel
+            // 
+            this.rulesLabel.AutoSize = true;
+            this.rulesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rulesLabel.Location = new System.Drawing.Point(107, 68);
+            this.rulesLabel.Name = "rulesLabel";
+            this.rulesLabel.Size = new System.Drawing.Size(55, 20);
+            this.rulesLabel.TabIndex = 88;
+            this.rulesLabel.Text = "Rules";
+            // 
+            // tipsLabel
+            // 
+            this.tipsLabel.AutoSize = true;
+            this.tipsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tipsLabel.Location = new System.Drawing.Point(807, 68);
+            this.tipsLabel.Name = "tipsLabel";
+            this.tipsLabel.Size = new System.Drawing.Size(42, 20);
+            this.tipsLabel.TabIndex = 89;
+            this.tipsLabel.Text = "Tips";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(7, 110);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(279, 16);
+            this.label8.TabIndex = 90;
+            this.label8.Text = "- Spaces much contain a number 0 - 9 to solve";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(7, 152);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(286, 16);
+            this.label9.TabIndex = 91;
+            this.label9.Text = "- Spaces containing 0 will be filled by the solver";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(7, 194);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(295, 16);
+            this.label10.TabIndex = 92;
+            this.label10.Text = "- Rows must only contain each number 1 - 9 once";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(7, 237);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(285, 16);
+            this.label11.TabIndex = 93;
+            this.label11.Text = "- Columns must contain each number 1 - 9 once";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(7, 279);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(284, 16);
+            this.label12.TabIndex = 94;
+            this.label12.Text = "- Squares must contain each number 1 - 9 once";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(696, 237);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(196, 16);
+            this.label13.TabIndex = 95;
+            this.label13.Text = "- Selected space will turn yellow";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(696, 279);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(285, 16);
+            this.label14.TabIndex = 96;
+            this.label14.Text = "- Filled spaces breaking no rules will turn green";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(696, 321);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(275, 32);
+            this.label15.TabIndex = 98;
+            this.label15.Text = "- Rows, columns and squares breaking a rule\r\nwill turn red";
             // 
             // SudokuSolver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(999, 632);
-            this.Controls.Add(this.ViewButton);
-            this.Controls.Add(this.ClearButton);
-            this.Controls.Add(this.SolveButton);
+            this.ClientSize = new System.Drawing.Size(999, 576);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.tipsLabel);
+            this.Controls.Add(this.rulesLabel);
+            this.Controls.Add(this.viewButton);
+            this.Controls.Add(this.clearButton);
+            this.Controls.Add(this.solveButton);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -1613,8 +1733,11 @@ namespace Sudoku_Solver
             this.Controls.Add(this.r1c1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "SudokuSolver";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Suduko Solver";
             ((System.ComponentModel.ISupportInitialize)(this.r1c1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.r3c1)).EndInit();
@@ -1792,9 +1915,19 @@ namespace Sudoku_Solver
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button SolveButton;
-        private System.Windows.Forms.Button ClearButton;
-        private System.Windows.Forms.Button ViewButton;
+        private System.Windows.Forms.Button solveButton;
+        private System.Windows.Forms.Button clearButton;
+        private System.Windows.Forms.Button viewButton;
+        private System.Windows.Forms.Label rulesLabel;
+        private System.Windows.Forms.Label tipsLabel;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
     }
 }
 
