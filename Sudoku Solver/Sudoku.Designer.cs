@@ -527,6 +527,8 @@ namespace Sudoku_Solver
             this.label1.Size = new System.Drawing.Size(2, 385);
             this.label1.TabIndex = 18;
             this.label1.Text = "label1";
+            this.label1.Enter += new System.EventHandler(this.Space_Enter);
+            this.label1.Leave += new System.EventHandler(this.Space_Leave);
             // 
             // label2
             // 
@@ -536,6 +538,8 @@ namespace Sudoku_Solver
             this.label2.Size = new System.Drawing.Size(358, 2);
             this.label2.TabIndex = 19;
             this.label2.Text = "label2";
+            this.label2.Enter += new System.EventHandler(this.Space_Enter);
+            this.label2.Leave += new System.EventHandler(this.Space_Leave);
             // 
             // r6c2
             // 
@@ -1168,6 +1172,8 @@ namespace Sudoku_Solver
             this.label4.Size = new System.Drawing.Size(2, 385);
             this.label4.TabIndex = 57;
             this.label4.Text = "label4";
+            this.label4.Enter += new System.EventHandler(this.Space_Enter);
+            this.label4.Leave += new System.EventHandler(this.Space_Leave);
             // 
             // r3c8
             // 
@@ -1901,8 +1907,6 @@ namespace Sudoku_Solver
             this.Name = "SudokuSolver";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Suduko Solver";
-            this.Enter += new System.EventHandler(this.Space_Enter);
-            this.Leave += new System.EventHandler(this.Space_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.r1c1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.r3c1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.r2c3)).EndInit();
