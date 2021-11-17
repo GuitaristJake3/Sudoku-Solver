@@ -16,13 +16,8 @@ namespace Sudoku_Solver
         public SudokuSolver()
         {
             InitializeComponent();
-            row1 = new RCS(r1c1.Value, r1c2.Value, r1c3.Value, r1c4.Value, r1c5.Value, r1c6.Value, r1c7.Value, r1c8.Value, r1c9.Value);
-            row2 = new RCS(r2c1.Value, r2c2.Value, r2c3.Value, r2c4.Value, r2c5.Value, r2c6.Value, r2c7.Value, r2c8.Value, r2c9.Value);
-        }
-
-        private void Update_Grid()
-        {
-            row1.Spaces = { r1c1.Value, r1c2.Value, r1c3.Value, r1c4.Value, r1c5.Value, r1c6.Value, r1c7.Value, r1c8.Value, r1c9.Value};
+            row1 = new RCS(r1c1, r1c2, r1c3, r1c4, r1c5, r1c6, r1c7, r1c8, r1c9);
+            row2 = new RCS(r2c1, r2c2, r2c3, r2c4, r2c5, r2c6, r2c7, r2c8, r2c9);
         }
 
         private void Space_Enter(object sender, EventArgs e)    //Each space turns yellow when control gained
@@ -35,6 +30,7 @@ namespace Sudoku_Solver
         {
             NumericUpDown space = sender as NumericUpDown;
             space.BackColor = Color.White;
+            row1.Validate(space);
         }
     }
 }
