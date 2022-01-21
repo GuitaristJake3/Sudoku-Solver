@@ -10,49 +10,70 @@ namespace Sudoku_Solver
 {
     class RCS
     {
-        object[] spaces;    //An array of the 9 spaces in each row, column and square
-        public RCS(object one, object two, object three, object four, object five, object six, object seven, object eight, object nine)
+        NumericUpDown[] spaces;
+        /// <summary>
+        /// Constructs a row, column or square using the nine spaces that it contains
+        /// </summary>
+        /// <param name="one">First space</param>
+        /// <param name="two">Second space</param>
+        /// <param name="three">Third space</param>
+        /// <param name="four">Fourth space</param>
+        /// <param name="five">Fifth space</param>
+        /// <param name="six">Sixth space</param>
+        /// <param name="seven">Seventh space</param>
+        /// <param name="eight">Eigth space</param>
+        /// <param name="nine">Ninth space</param>
+        public RCS(NumericUpDown one, NumericUpDown two, NumericUpDown three, 
+            NumericUpDown four, NumericUpDown five, NumericUpDown six, 
+            NumericUpDown seven, NumericUpDown eight, NumericUpDown nine)
         {
-            spaces = new object[] {one, two, three, four, five, six, seven, eight, nine};
+            spaces = new NumericUpDown[] {one, two, three, four, five, six, seven, eight, nine};
         }
-
-        public bool Validate(NumericUpDown current)
+        /// <summary>
+        /// If the space matches one in the RCS array that is not the current space or zero, validation fails
+        /// </summary>
+        /// <param name="current">The space with focus</param>
+        /// <returns>True if validation passes, False if it fails</returns>
+        internal bool Validate(NumericUpDown current)
         {
             bool isValid = true;
-            foreach (object s in spaces)
+            foreach (NumericUpDown space in spaces)
             {
-                NumericUpDown space = s as NumericUpDown;                                                   //If the space matches a value in the RCS array
-                if (current.Value == space.Value && space.Value != 0 && current.Equals(space) == false)     //that is not the current space and is not zero,
-                {                                                                                           //validation fails
-                    Console.WriteLine("validation failed");
+                if (current.Value == space.Value && space.Value != 0 && current.Equals(space) == false)
+                {
                     isValid = false;
                     break;
                 }
             }
+            return isValid;
+        }
+        /// <summary>
+        /// Colours spaces in the RCS white if validation has passed and red if it failed
+        /// </summary>
+        /// <param name="isValid">If validation passed for the RCS</param>
+        internal void ColourSpaces(bool isValid)
+        {
             if (isValid == true)
             {
-                Console.WriteLine("validation passed");
-                foreach (object s in spaces)
+                foreach (NumericUpDown space in spaces)
                 {
-                    NumericUpDown space = s as NumericUpDown;
                     space.BackColor = Color.White;
                 }
             }
             else
             {
-                foreach (object s in spaces)
+                foreach (NumericUpDown space in spaces)
                 {
-                    NumericUpDown space = s as NumericUpDown;
                     space.BackColor = Color.Red;
                 }
             }
-            return isValid;
         }
-
-        public object[] Spaces
+        /// <summary>
+        /// Makes the spaces in each RCS instance accessible
+        /// </summary>
+        public NumericUpDown[] Spaces
         {
-            get { return spaces; }      //Makes objects in each RCS instance accessible
-            set { spaces = value; }     //Makes objects in each RCS instance mutable
+            get { return spaces; }
         }
     }
 }

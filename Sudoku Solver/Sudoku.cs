@@ -50,35 +50,61 @@ namespace Sudoku_Solver
             col1, col2, col3, col4, col5, col6, col7, col8, col9,
             sqa1, sqa2, sqa3, sqa4, sqa5, sqa6, sqa7, sqa8, sqa9 };
         }
-
-        private List<RCS> SelectRCS(NumericUpDown current)      //Selects which 3 Validate methods to call
+        /// <summary>
+        /// Finds the row, column and square the selected space is in to call the appropriate Validate methods 
+        /// </summary>
+        /// <param name="current">The space with focus</param>
+        /// <returns>A list of 3 RCS arrays to validate</returns>
+        private List<RCS> SelectRCS(NumericUpDown current)
         {
-            List<RCS> rcsVal = new List<RCS>();
+            List<RCS> selectedRCS = new List<RCS>();
             foreach (RCS rcs in grid)
             {
                 if (rcs.Spaces.Contains(current))
                 {
-                    rcsVal.Add(rcs);
+                    selectedRCS.Add(rcs);
                 }
             }
-            return rcsVal;      //Returns the list of 3 RCS objcects to check
+            return selectedRCS;
         }
-
-        private void Space_Enter(object sender, EventArgs e)    //Each space turns yellow when control gained
+        /// <summary>
+        /// Each space turns yellow when focus gained
+        /// </summary>
+        /// <param name="sender">The space gaining focus</param>
+        /// <param name="e">Empty</param>
+        private void Space_Enter(object sender, EventArgs e)
         {
             NumericUpDown space = sender as NumericUpDown;
             space.BackColor = Color.Yellow;
         }
-
-        private void Space_Leave(object sender, EventArgs e)    //Each space turns white when control lost
+        /// <summary>
+        /// Calls validation methods for each RCS the space losing focus is in and changes colours accordingly
+        /// </summary>
+        /// <param name="sender">The space losing focus</param>
+        /// <param name="e">Empty</param>
+        private void Space_Leave(object sender, EventArgs e)
         {
             NumericUpDown space = sender as NumericUpDown;
-            space.BackColor = Color.White;
-            List<RCS> rcsVal = new List<RCS>();
-            rcsVal = SelectRCS(space);
-            foreach (RCS rcs in rcsVal)
+            List<RCS> passVal = new List<RCS>();        //RCS that pass validation will change colour first
+            List<RCS> failVal = new List<RCS>();        //so any that fail will overwrite them
+            foreach (RCS rcs in SelectRCS(space))
             {
-                rcs.Validate(space);
+                if (rcs.Validate(space) == true)
+                {
+                    passVal.Add(rcs);
+                }
+                else
+                {
+                    failVal.Add(rcs);
+                }
+            }
+            foreach (RCS rcs in passVal)
+            {
+                rcs.ColourSpaces(rcs.Validate(space));
+            }
+            foreach (RCS rcs in failVal)
+            {
+                rcs.ColourSpaces(rcs.Validate(space));
             }
         }
     }
