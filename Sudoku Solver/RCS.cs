@@ -8,9 +8,9 @@ using System.Windows.Forms;     //To cast each space as a NumericUpDown
 
 namespace Sudoku_Solver
 {
-    class RCS
+    public class RCS
     {
-        NumericUpDown[] spaces;
+        List<NumericUpDown> spaces;
         /// <summary>
         /// Constructs a row, column or square using the nine spaces that it contains
         /// </summary>
@@ -27,14 +27,14 @@ namespace Sudoku_Solver
             NumericUpDown four, NumericUpDown five, NumericUpDown six, 
             NumericUpDown seven, NumericUpDown eight, NumericUpDown nine)
         {
-            spaces = new NumericUpDown[] {one, two, three, four, five, six, seven, eight, nine};
+            spaces = new List<NumericUpDown> {one, two, three, four, five, six, seven, eight, nine};
         }
         /// <summary>
         /// If the space matches one in the RCS array that is not the current space or zero, validation fails
         /// </summary>
         /// <param name="current">The space with focus</param>
         /// <returns>True if validation passes, False if it fails</returns>
-        internal bool Validate(NumericUpDown current)
+        public bool Validate(NumericUpDown current)
         {
             bool isValid = true;
             foreach (NumericUpDown space in spaces)
@@ -51,13 +51,34 @@ namespace Sudoku_Solver
         /// Colours spaces in the RCS white if validation has passed and red if it failed
         /// </summary>
         /// <param name="isValid">If validation passed for the RCS</param>
-        internal void ColourSpaces(bool isValid)
+        /// <param name="invalRCS">Previously invalidated RCS</param>
+        public void ColourSpaces(bool isValid, List<RCS> invalRCS)
         {
             if (isValid == true)
             {
                 foreach (NumericUpDown space in spaces)
                 {
-                    space.BackColor = Color.White;
+                    bool colourWhite = true;
+                    foreach (RCS rcs in invalRCS)
+                    { 
+                        if (!rcs.Spaces.Contains(space))
+                        {
+                            colourWhite = true;
+                        }
+                        else
+                        {
+                            colourWhite = false;
+                            break;
+                        }
+                    }
+                    if (colourWhite  == true)
+                    {
+                        space.BackColor = Color.White;
+                    }
+                    else
+                    {
+                        space.BackColor = Color.Red;
+                    }
                 }
             }
             else
@@ -71,7 +92,7 @@ namespace Sudoku_Solver
         /// <summary>
         /// Makes the spaces in each RCS instance accessible
         /// </summary>
-        public NumericUpDown[] Spaces
+        public List<NumericUpDown> Spaces
         {
             get { return spaces; }
         }

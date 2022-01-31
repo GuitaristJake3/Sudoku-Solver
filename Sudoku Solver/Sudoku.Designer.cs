@@ -1733,9 +1733,9 @@ namespace Sudoku_Solver
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(7, 194);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(295, 16);
+            this.label10.Size = new System.Drawing.Size(267, 16);
             this.label10.TabIndex = 92;
-            this.label10.Text = "- Rows must only contain each number 1 - 9 once";
+            this.label10.Text = "- Rows must contain each number 1 - 9 once";
             // 
             // label11
             // 

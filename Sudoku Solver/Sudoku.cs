@@ -16,6 +16,7 @@ namespace Sudoku_Solver
             col1, col2, col3, col4, col5, col6, col7, col8, col9,
             sqa1, sqa2, sqa3, sqa4, sqa5, sqa6, sqa7, sqa8, sqa9;
         List<RCS> grid;
+        List<RCS> invalRCS;
         public SudokuSolver()
         {
             InitializeComponent();
@@ -49,13 +50,14 @@ namespace Sudoku_Solver
             grid = new List<RCS> { row1, row2, row3, row4, row5, row6, row7, row8, row9,
             col1, col2, col3, col4, col5, col6, col7, col8, col9,
             sqa1, sqa2, sqa3, sqa4, sqa5, sqa6, sqa7, sqa8, sqa9 };
+            invalRCS = new List<RCS>();
         }
         /// <summary>
         /// Finds the row, column and square the selected space is in to call the appropriate Validate methods 
         /// </summary>
         /// <param name="current">The space with focus</param>
         /// <returns>A list of 3 RCS arrays to validate</returns>
-        private List<RCS> SelectRCS(NumericUpDown current)
+        public List<RCS> SelectRCS(NumericUpDown current)
         {
             List<RCS> selectedRCS = new List<RCS>();
             foreach (RCS rcs in grid)
@@ -85,26 +87,29 @@ namespace Sudoku_Solver
         private void Space_Leave(object sender, EventArgs e)
         {
             NumericUpDown space = sender as NumericUpDown;
-            List<RCS> passVal = new List<RCS>();        //RCS that pass validation will change colour first
-            List<RCS> failVal = new List<RCS>();        //so any that fail will overwrite them
             foreach (RCS rcs in SelectRCS(space))
             {
                 if (rcs.Validate(space) == true)
                 {
-                    passVal.Add(rcs);
+                    bool alreadyInvalid;
+                    if (invalRCS.Contains(rcs))
+                    {
+                        alreadyInvalid = true;
+                    }
+                    else
+                    {
+                        alreadyInvalid = false;
+                    }
+                    if (alreadyInvalid == false)
+                    {
+                        invalRCS.Remove(rcs);
+                    }
                 }
                 else
                 {
-                    failVal.Add(rcs);
+                    invalRCS.Add(rcs);
                 }
-            }
-            foreach (RCS rcs in passVal)
-            {
-                rcs.ColourSpaces(rcs.Validate(space));
-            }
-            foreach (RCS rcs in failVal)
-            {
-                rcs.ColourSpaces(rcs.Validate(space));
+                rcs.ColourSpaces(rcs.Validate(space), invalRCS);
             }
         }
     }
