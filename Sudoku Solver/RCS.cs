@@ -30,19 +30,21 @@ namespace Sudoku_Solver
             spaces = new List<NumericUpDown> {one, two, three, four, five, six, seven, eight, nine};
         }
         /// <summary>
-        /// If the space matches one in the RCS array that is not the current space or zero, validation fails
+        /// If a space value matches one in the RCS array that is not the current space or zero, validation fails
         /// </summary>
-        /// <param name="current">The space with focus</param>
         /// <returns>True if validation passes, False if it fails</returns>
-        public bool Validate(NumericUpDown current)
+        public bool Validate()
         {
             bool isValid = true;
             foreach (NumericUpDown space in spaces)
             {
-                if (current.Value == space.Value && space.Value != 0 && current.Equals(space) == false)
+                foreach (NumericUpDown space2 in spaces)
                 {
-                    isValid = false;
-                    break;
+                    if (space.Value == space2.Value && space.Value != 0 && space.Equals(space2) == false)
+                    {
+                        isValid = false;
+                        break;
+                    }
                 }
             }
             return isValid;
@@ -58,26 +60,24 @@ namespace Sudoku_Solver
             {
                 foreach (NumericUpDown space in spaces)
                 {
-                    bool colourWhite = true;
-                    foreach (RCS rcs in invalRCS)
-                    { 
-                        if (!rcs.Spaces.Contains(space))
-                        {
-                            colourWhite = true;
-                        }
-                        else
-                        {
-                            colourWhite = false;
-                            break;
-                        }
-                    }
-                    if (colourWhite  == true)
+                    if (invalRCS.Count > 0)
                     {
-                        space.BackColor = Color.White;
+                        foreach (RCS rcs in invalRCS)
+                        {
+                            if (!rcs.Spaces.Contains(space))
+                            {
+                                space.BackColor = Color.White;
+                            }
+                            else
+                            {
+                                space.BackColor = Color.Red;
+                                break;
+                            }
+                        }
                     }
                     else
                     {
-                        space.BackColor = Color.Red;
+                        space.BackColor = Color.White;
                     }
                 }
             }

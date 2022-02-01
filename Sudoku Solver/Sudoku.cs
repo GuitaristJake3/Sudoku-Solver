@@ -87,29 +87,34 @@ namespace Sudoku_Solver
         private void Space_Leave(object sender, EventArgs e)
         {
             NumericUpDown space = sender as NumericUpDown;
+            List<RCS> passVal = new List<RCS>();
+            List<RCS> failVal = new List<RCS>();
             foreach (RCS rcs in SelectRCS(space))
             {
-                if (rcs.Validate(space) == true)
+                if (rcs.Validate() == true)
                 {
-                    bool alreadyInvalid;
+                    passVal.Add(rcs);
                     if (invalRCS.Contains(rcs))
-                    {
-                        alreadyInvalid = true;
-                    }
-                    else
-                    {
-                        alreadyInvalid = false;
-                    }
-                    if (alreadyInvalid == false)
                     {
                         invalRCS.Remove(rcs);
                     }
                 }
                 else
                 {
-                    invalRCS.Add(rcs);
+                    failVal.Add(rcs);
+                    if (!invalRCS.Contains(rcs))
+                    {
+                        invalRCS.Add(rcs);
+                    }
                 }
-                rcs.ColourSpaces(rcs.Validate(space), invalRCS);
+            }
+            foreach (RCS rcs in passVal)
+            {
+                rcs.ColourSpaces(rcs.Validate(), invalRCS);
+            }
+            foreach (RCS rcs in failVal)
+            {
+                rcs.ColourSpaces(rcs.Validate(), invalRCS);
             }
         }
     }
